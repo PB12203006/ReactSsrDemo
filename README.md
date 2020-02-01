@@ -15,3 +15,9 @@
 
 6. to start, run `npm run dev`. Note that this command also dynamically rebuilds app anytime you make file changes, so there's no need to run build commands again in step 6
 
+## Tools Setup
+### VSCode
+1. install VSCode
+2. install 2 plugins: prettier and eslint 
+3. go to Settings -> Text Editor -> Formatting -> set `Format On Save` to true
+4. restart VSCode
