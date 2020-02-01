@@ -16,7 +16,7 @@
 
 7. To start, run `npm run dev`. Note that this command also dynamically rebuilds app anytime you make file changes, so there's no need to run build commands again in step 6
 
-8. App is supposed to be up on `localhost://3000`
+8. App is supposed to be up on `localhost:3000`
 
 ## Tools Setup
 
