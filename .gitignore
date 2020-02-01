@@ -1,0 +1,7 @@
+node_modules
+build/bundle.js
+dist/main.js
+public/bundle.js
+.vscode
+.deployment
+web.config
