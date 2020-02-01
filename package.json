@@ -7,7 +7,10 @@
     "dev": "npm-run-all --parallel dev:*",
     "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
     "dev:build-server": "webpack --config webpack.server.js --mode=development --watch",
-    "dev:build-client": "webpack --config webpack.client.js --mode=development --watch"
+    "dev:build-client": "webpack --config webpack.client.js --mode=development --watch",
+    "one-off-build": "npm-run-all --serial one-off:*",
+    "one-off:build-client": "webpack --config webpack.client.js --mode=development",
+    "one-off:build-server": "webpack --config webpack.server.js --mode=development"
   },
   "author": "",
   "license": "ISC",
