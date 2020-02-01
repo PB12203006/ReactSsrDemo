@@ -9,9 +9,9 @@
 
 4. pull this repo
 
-5. in root of repo (`/ReactSsrDemo`), run `npm i`
+5. install dependencies: in root of repo (`/ReactSsrDemo`), run `npm i`
 
-6. first time running please build first, run `npm run dev:build-server` and `npm run dev:build-client` respectively
+6. (after step 5) first time running please build first, run `npm run dev:build-server` and `npm run dev:build-client` respectively
 
 6. to start, run `npm run dev`. Note that this command also dynamically rebuilds app anytime you make file changes, so there's no need to run build commands again in step 6
 
