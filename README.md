@@ -9,7 +9,7 @@
 
 4. pull this repo
 
-5. in root of repo, run `npm i`
+5. in root of repo (`/ReactSsrDemo`), run `npm i`
 
 6. to start, run `npm run dev`
 
