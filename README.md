@@ -15,6 +15,8 @@
 
 6. to start, run `npm run dev`. Note that this command also dynamically rebuilds app anytime you make file changes, so there's no need to run build commands again in step 6
 
+7. app is supposed to be up on `localhost://3000`
+
 ## Tools Setup
 ### VSCode
 1. install VSCode
