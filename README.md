@@ -6,7 +6,7 @@
 
 2. Install node.js 12.14.1 : `nvm install 12.14.1`
 
-3. `npm -v` make sure output is `6.13.4`
+3. Run `nvm use 12.14.1`, then run `npm -v` make sure output is `6.13.4`
 
 4. Pull this repo
 
@@ -26,3 +26,8 @@
 2. Open VSCode, install 2 plugins: prettier and eslint
 3. Go to Settings -> Text Editor -> Formatting -> set `Format On Save` to true
 4. Restart VSCode
+
+### Chrome
+
+1. Disable Cache
+2. Install React Developer Tools (https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
