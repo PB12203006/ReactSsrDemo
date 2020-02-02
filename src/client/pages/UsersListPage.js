@@ -4,40 +4,44 @@ import { connect } from 'react-redux';
 import { fetchUsers } from '../actions';
 
 const mapStateToProps = state => {
-    return { users: state.users };
+  return { users: state.users };
+};
+
+const mapDispatchToProps = dispatch => {
+  return { fetchUsers: () => dispatch(fetchUsers()) };
 };
 
 const loadData = store => {
-    return store.dispatch(fetchUsers());
+  return store.dispatch(fetchUsers());
 };
 
 class UserList extends React.Component {
-    componentDidMount() {
-        this.props.fetchUsers();
-    }
+  componentDidMount() {
+    this.props.fetchUsers();
+  }
 
-    renderUsers = () => {
-        return this.props.users.map(user => {
-            return <li key={user.id}>{user.name}</li>;
-        });
-    };
+  renderUsers = () => {
+    return this.props.users.map(user => {
+      return <li key={user.id}>{user.name}</li>;
+    });
+  };
 
-    render() {
-        return (
-            <div>
-                User List
-                <ul>{this.renderUsers()}</ul>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        User List
+        <ul>{this.renderUsers()}</ul>
+      </div>
+    );
+  }
 }
 
 UserList.propTypes = {
-    fetchUsers: PropTypes.func,
-    users: PropTypes.array,
+  fetchUsers: PropTypes.func,
+  users: PropTypes.array,
 };
 
 export default {
-    component: connect(mapStateToProps, { fetchUsers })(UserList),
-    loadData,
+  component: connect(mapStateToProps, mapDispatchToProps)(UserList),
+  loadData,
 };
